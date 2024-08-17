@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "care_cascade_backend": {
+      "main": "src/care_cascade_backend/main.mo",
+      "type": "motoko"
+    },
+    "care_cascade_frontend": {
+      "dependencies": [
+        "care_cascade_backend"
+      ],
+      "source": [
+        "src/care_cascade_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "care_cascade_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
